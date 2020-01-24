@@ -8,4 +8,9 @@ public void OnClickToast()
     {
         NativeBridge.Instance.SetToast("토스트 메세지!");
     }
+
+    public void OnClickDialog()
+    {
+        NativeBridge.Instance.SetDialog("유니티 확인창", "확인하시겠습니까?");
+    }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NativeBridge : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class NativeBridge : MonoBehaviour
             return instance;
         }
     }
+
+    public Text ResponseText;
 
     private AndroidJavaObject unityActivity;
 
@@ -38,5 +41,22 @@ public class NativeBridge : MonoBehaviour
         {
             push.Call("ShowToast", unityActivity, message);
         }));
+    }
+
+    public void SetDialog(string title, string message)
+    {
+        //unityActivity.Call("runOnUiThread", new AndroidJavaRunnable(() =>
+        //{
+            push.Call("ShowDialog", unityActivity, title, message);
+        //}));
+    }
+
+    private void ResponseDialog(params string[] texts)
+    {
+        string text = "";
+        for (int i = 0; i < texts.Length; i++)
+            text += texts[i] + " / ";
+
+        ResponseText.text = text;
     }
 }
