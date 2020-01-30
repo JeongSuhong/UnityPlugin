@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "980190854648",
+    "firebase_url": "https://unityplugins-7c204.firebaseio.com",
+    "project_id": "unityplugins-7c204",
+    "storage_bucket": "unityplugins-7c204.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980190854648:android:a96ffb7ed8c83cf17c6a0d",
+        "android_client_info": {
+          "package_name": "com.Suhong.Test_Plugin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980190854648-qmu9asppr3a8m2hs6akv3bo7e5hmg299.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASDdA7H2a157GXpVT5OdioWBkX7lb4tbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980190854648-qmu9asppr3a8m2hs6akv3bo7e5hmg299.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
